@@ -11,3 +11,10 @@ import scrapy
 class K3XinyuImageItem(scrapy.Item):
     image_url = scrapy.Field()
     title = scrapy.Field()
+
+
+class K3XinyuShoeMetaData(scrapy.Item):
+    image_url = scrapy.Field()
+    title = scrapy.Field() # 货号
+    address = scrapy.Field() # 拿货地址
+    qq_number = scrapy.Field() # QQ号码
