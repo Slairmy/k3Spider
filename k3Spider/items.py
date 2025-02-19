@@ -6,15 +6,10 @@
 import scrapy
 
 
-# 这里定义的是一组json结构,保存需要爬取的字段信息
-# 暂时先保存title和链接
-class K3XinyuImageItem(scrapy.Item):
-    image_url = scrapy.Field()
-    title = scrapy.Field()
-
-
 class K3XinyuShoeMetaData(scrapy.Item):
     image_url = scrapy.Field()
-    title = scrapy.Field() # 货号
-    address = scrapy.Field() # 拿货地址
-    qq_number = scrapy.Field() # QQ号码
+    title = scrapy.Field()  # 货号
+    address = scrapy.Field()  # 拿货地址
+    qq_number = scrapy.Field()  # QQ号码
+    mobile = scrapy.Field()  # 手机号
+    wx = scrapy.Field()  # 微信号

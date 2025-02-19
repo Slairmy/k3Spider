@@ -8,12 +8,8 @@
 from itemadapter import ItemAdapter
 
 
-class K3SpiderPipeline:
-    def process_item(self, item, spider):
-        return item
-
 class K3XinyuShoeMetaDataPipeline:
 
     def process_item(self, item, spider):
-        print('管道处理数据')
+        print('管道处理数据,向量化图片写入向量数据库')
         print(item)
